@@ -1,0 +1,211 @@
+@import "global.css";
+
+/* Navbar */
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    background-color: var(--pr-color);
+    width: 256px;
+    height: fit-content;
+    font-size: 40px;
+    padding: 30px 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.logo a {
+    color: var(--sn-color);
+}
+
+.logo p {
+    font-size: 15px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu a {
+    font-size: 20px;
+    margin-left: 50px;
+    color: var(--sn-color);
+    position: relative;
+    font-family: arial;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.menu a::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 105%;
+    height: 2px;
+    background-color: #fff;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.menu a:hover::after {
+    opacity: 1;
+    bottom: -5px;
+}
+
+/* Welcome Page */
+
+.bg {
+    position: relative;
+    height: 100vh;
+}
+
+.overbg {
+    background-color: var(--sn-color);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 60%;
+}
+
+.bg img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+}
+
+.bg .container {
+    height: 100%;
+    width: 100%;
+}
+
+.welcome {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-items: center;
+
+}
+
+.welcome-box {
+    position: relative;
+    width: 100%;
+    z-index: 10;
+}
+
+.welcome-box .content {
+    color: #fff;
+    line-height: 1.2;
+    margin-bottom: 50px;
+}
+
+.welcome-box .content span {
+    font-size: 30px;
+    font-family: arial;
+    letter-spacing: 4px;
+}
+
+.welcome-box .content h1 {
+    font-size: 80px;
+    letter-spacing: 4px;
+}
+
+.welcome-box .content h3 {
+    letter-spacing: 4px;
+    font-size: 50px;
+}
+
+.welcome-box .content p {
+    font-size: 16px;
+    font-family: arial;
+}
+
+.content-center {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.content-center button {
+    background-color: var(--pr-color);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 7px;
+    font-family: arial;
+    font-weight: 600;
+    display: flex;
+    cursor: pointer;
+}
+
+.content-center button i {
+    margin-right: 10px;
+}
+
+.content-center a {
+    color: #927664;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-family: arial;
+}
+
+.content-center a i {
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+/* Sub Title */
+.sub-title {
+    padding: 55px 0;
+    text-align: center;
+}
+
+.sub-title span {
+    font-family: arial;
+    font-size: 28px;
+}
+
+button {
+    background-color: var(--pr-color);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 7px;
+    font-family: arial;
+    font-weight: 600;
+    display: grid;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+}
